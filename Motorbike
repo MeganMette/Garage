@@ -1,0 +1,31 @@
+public class Motorbike extends Vehicle {
+	private boolean handleBars;
+	private boolean seatStorage;
+
+	public Motorbike(int vehicleId, String make, String colour, int wheels, boolean handleBars, boolean seatStorage) {
+		super(vehicleId, make, colour, 2);
+		this.handleBars = handleBars;
+		this.seatStorage = seatStorage;
+	}
+
+	public boolean isHandleBars() {
+		return handleBars;
+	}
+
+	public void setHandleBars(boolean handleBars) {
+		this.handleBars = handleBars;
+	}
+
+	public boolean isSeatStorage() {
+		return seatStorage;
+	}
+
+	public void setSeatStorage(boolean seatStorage) {
+		this.seatStorage = seatStorage;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
