@@ -1,0 +1,31 @@
+public class Car extends Vehicle {
+	private int seatNum;
+	private String bootSpace;
+
+	public Car(int vehicleId, String make, String colour, int wheels, int seatNum, String bootSpace) {
+		super(vehicleId, make, colour, 4);
+		this.seatNum = seatNum;
+		this.bootSpace = bootSpace;
+	}
+
+	public int getSeatNum() {
+		return seatNum;
+	}
+
+	public void setSeatNum(int seatNum) {
+		this.seatNum = seatNum;
+	}
+
+	public String getBootSpace() {
+		return bootSpace;
+	}
+
+	public void setBootSpace(String bootSpace) {
+		this.bootSpace = bootSpace;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
