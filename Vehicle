@@ -1,0 +1,65 @@
+public class Vehicle {
+	private int vehicleId;
+	private String make;
+	private String colour;
+	private int wheels;
+
+	public Vehicle(int vehicleId, String make, String colour, int wheels) {
+		this.vehicleId = vehicleId;
+		this.make = make;
+		this.colour = colour;
+		this.wheels = wheels;
+	}
+
+	public int getWheels() {
+		return wheels;
+	}
+
+	public void setWheels(int wheels) {
+		this.wheels = wheels;
+	}
+
+	public int getVehicleId() {
+		return vehicleId;
+	}
+
+	public void setVehicleId(int vehicleId) {
+		this.vehicleId = vehicleId;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getColour() {
+		return colour;
+	}
+
+	public void setColour(String colour) {
+		this.colour = colour;
+	}
+
+	public String horn() {
+		System.out.println("Honk, Honk");
+		return colour;
+	}
+
+	public String unlockVehicle() {
+		System.out.println("Click");
+		return colour;
+	}
+
+	public String startEngine() {
+		System.out.println("Vroooooooom Vrooooooooom");
+		return colour;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
