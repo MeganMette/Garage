@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+
+public class Garage {
+	private static final String vehicles = null;
+	public static Object printBillTotal;
+
+	private ArrayList<Vehicle> vehicle = new ArrayList<>();
+
+	public Vehicle findVehicleByVehicleId(int vehicleId) {
+		for (Vehicle vehicle : vehicle) {
+			if (vehicle.getVehicleId() == vehicleId) {
+				return vehicle;
+			}
+		}
+		return null;
+	}
+
+	public void calcBill() {
+		for (Vehicle vehicle : vehicle) {
+			if (vehicle instanceof Car) {
+				System.out.println("The bill for this car is going to be £200.");
+
+			} else if (vehicle instanceof Motorbike) {
+				System.out.println("The bill for this motorbike will be £100.");
+
+			} else if (vehicle instanceof Lorry) {
+				System.out.println("The bill for this lorry will be £500.");
+			}
+		}
+	}
+
+	public void emptyGarage() {
+		vehicles.removeAll(vehicles);
+	}
+
+	public void removeMultipleVehicles(String type) {
+
+	}
+
+	public static void removeMultipleVehiclesById(int[] b) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void printBillTotal() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void addVehicle(Car car) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void addVehicle(Lorry lorry) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void addvehicle(Motorbike motorbike) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
