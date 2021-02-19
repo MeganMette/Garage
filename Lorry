@@ -1,0 +1,31 @@
+public class Lorry extends Vehicle {
+	private String bedroom;
+	private String trailer;
+
+	public Lorry(int vehicleId, String make, String colour, int wheels, String bedroom, String trailer) {
+		super(vehicleId, make, colour, 4);
+		this.bedroom = bedroom;
+		this.trailer = trailer;
+	}
+
+	public String getBedroom() {
+		return bedroom;
+	}
+
+	public void setBedroom(String bedroom) {
+		this.bedroom = bedroom;
+	}
+
+	public String getTrailer() {
+		return trailer;
+	}
+
+	public void setTrailer(String trailer) {
+		this.trailer = trailer;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
